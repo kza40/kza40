@@ -10,11 +10,11 @@ Outside of that I like to experiment and invent. On the side I'm working on gett
 
 ## Projects
 
-**FlowPilot** *(in progress)* - Closed-loop agentic assistant on a Jetson Orin Nano. Maps sensor inputs to real-time lane-change decisions with safety interlocks and human-override controls. The interesting part was figuring out where to draw the confidence thresholds so it actually fails safely.
+**[FlowPilot](https://github.com/kza40/FlowPilot)** *(in progress)* - Agentic lane-change assistant for a Jetson Orin Nano. Built so far: a multi-sensor ingestion layer (camera, LiDAR, radar, IMU) with timestamp synchronization, plus a latency benchmarking harness. Next up: the reasoning loop and the safety interlocks with human override.
 
-**[VirtualMemoryAssistant](https://github.com/kza40/VirtualMemoryAssistant)** - RAG pipeline that indexes camera frames into FAISS for natural-language retrieval. Built with CLIP + Ollama on edge hardware. Learned a lot about how much prompt framing affects output quality on multimodal queries.
+**[VisualMemoryAssistant](https://github.com/kza40/VisualMemoryAssistant)** - Retrieval pipeline for a Jetson Orin Nano that indexes camera frames into FAISS with CLIP and answers questions like "where did I leave my keys?" with Moondream2. Unit-tested in CI; on-device benchmarks are next. Learned a lot about how much prompt framing affects output quality on multimodal queries.
 
-**[PowerLine-Defect-Detector](https://github.com/kza40/PowerLine-Defect-Detector)** - Computer vision pipeline using YOLOv8 to detect insulator defects in aerial drone imagery. 85%+ mAP, FastAPI inference server at 15+ FPS on CPU.
+**[PowerLine-Defect-Detector](https://github.com/kza40/PowerLine-Defect-Detector)** - Computer vision pipeline using YOLOv8 to detect insulator defects in aerial drone imagery. 81% mAP50 on 1,000+ images, served through a FastAPI inference server with load testing.
 
 **[Parabix SIMD](https://github.com/kza40/SIMD_AudioNormalization)** - C++ SIMD prototype for the Parabix open-source framework. 5-8x throughput over scalar baselines, a lot of gdb time to get there.
 
