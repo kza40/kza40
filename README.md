@@ -1,6 +1,6 @@
 # Hey, I'm Kiarash 👋
 
-CS student at SFU (graduating December 2026). Right now I'm building **[Mylos](https://getmylos.com)**, an AI voice receptionist that books and reschedules appointments for small businesses. It's live with 3 pilot shops. I'm also doing directed-studies research with Dr. Arrvindh Shriraman on whether LoRA fine-tuning on frontier-model feedback can teach a 7B model to write correct, faster CUDA kernels.
+CS student at SFU (graduating December 2026). Right now I'm building **[Mylos](https://getmylos.com)**, an AI voice receptionist that books and reschedules appointments for small businesses. It's live with 3 pilot shops. I'm also doing directed-studies research with Dr. Arrvindh Shriraman on whether LoRA fine-tuning can teach a 7B model to write correct, faster CUDA kernels.
 
 Before that I spent the summer as an SDE intern at Amazon building production agentic systems, which got me genuinely curious about how these systems fail and what it takes to make them safer and more steerable. Most of my current work comes back to that: evaluation harnesses, failure replay, guardrails.
 
@@ -23,7 +23,7 @@ Outside of that I like to experiment and invent. On the side I'm working on gett
 ## Background
 
 - **Mylos** (Aug 2026 – present) - Founder & backend engineer. Multi-tenant FastAPI backend on Cloud Run for a voice agent, 800+ tests, and an LLM eval harness (25 scenarios, simulated callers + LLM judge) that took the call pass rate from 76% to 99%
-- **SFU** (Sep 2026 – present) - Undergraduate researcher (directed studies, Dr. Arrvindh Shriraman). Distilling GPU-kernel skill from a frontier model (Claude) into Qwen-7B with LoRA fine-tuning. Built the pipeline end to end: 18,000+ open-source PyTorch modules turned into executable GPU benchmark tasks, a 721-kernel teacher dataset (100% verified correct, median 2.4x speedup), and a LoRA → vLLM → execution-based scoring harness with pre-registered experiments
+- **SFU** (Sep 2026 – present) - Undergraduate researcher (directed studies, Dr. Arrvindh Shriraman). LoRA fine-tuning a 7B open model to write correct, faster GPU kernels; built the benchmarking, training, and evaluation pipeline end to end
 - **Amazon** (Summer 2026) - SDE Intern. Multi-agent system on AWS (Claude, Bedrock AgentCore, custom MCP tools) that cut reconciliation investigations from 4-5 hours to under 10 minutes; adopted by a 22-person accounting org and won the People's Choice Award at the Amazon-wide Global AI Solutions Expo
 - **Delta-Q Technologies** - Embedded software on EV charging systems, ETL pipelines for 1,500+ IoT units
 - **SFU Satellite Team** - Ground control platform processing 200+ packets/sec with real-time anomaly detection
